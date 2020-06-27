@@ -38,7 +38,7 @@ class Song
   end
   
   def self.find_or_create_by_name(str_name)
-   self.str_name == find_by_name(str_name) || self.create_by_name(str_name)
+   self.find_by_name(str_name) || self.create_by_name(str_name)
   end
   
   def self.alphabetical
