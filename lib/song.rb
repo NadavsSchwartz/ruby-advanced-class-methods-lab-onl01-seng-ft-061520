@@ -49,7 +49,7 @@ class Song
     sorted_file_name = file_name.split(" - ")
     artist_name = sorted_file_name[0]
     song_name = sorted_file_name[1].slice(".mp3")
-
+    song_name
     song = self.create
     song.name = song_name
     song.artist_name = artist_name
