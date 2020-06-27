@@ -56,7 +56,7 @@ class Song
   end
 
   def self.create_from_filename(file_name)
-    sorted_file_name = file_name.split(" - ").delete(".mp3")
+    sorted_file_name = file_name.split(" - ")
     artist_name = sorted_file_name[0]
     song_name = sorted_file_name[1]
 
