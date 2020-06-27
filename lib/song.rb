@@ -50,7 +50,7 @@ class Song
     self.all.sort_by{|s| s.name}
   end
 
-  def self.new_from_filename(filename)
+  def self.new_from_filename(file_name)
     sorted_file_name = file_name.split(" - ").delete(".mp3")
     artist_name = sorted_file_name[0]
     song_name = sorted_file_name[1]
